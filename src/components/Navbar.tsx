@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/utils/cn";
-import { searchForWorkspaceRoot } from "vite";
+import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 
 function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
@@ -23,7 +21,7 @@ function Navbar({ className }: { className?: string }) {
                             Crypto Dashboard
                         </HoveredLink>
                     </MenuItem>
-                    <HoveredLink className="hover:text-red-400" href="contact">
+                    <HoveredLink className="hover:text-red-400" href="/contact">
                         Contact Me
                     </HoveredLink>
                 </Menu>
